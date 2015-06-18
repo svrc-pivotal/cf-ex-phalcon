@@ -17,7 +17,7 @@ try {
     //Set the database service
     $di->set('db', function(){
         $services = json_decode($_ENV['VCAP_SERVICES'], true);
-        $service = $services['cleardb'][0]; // pick the first service
+        $service = $services['p-mysql'][0]; // pick the first service
         return new \Phalcon\Db\Adapter\Pdo\Mysql(array(
             "host" => $service['credentials']['hostname'],
             "port" => $service['credentials']['port'],

@@ -5,8 +5,7 @@ applications:
   instances: 1
   host: phalcon-demo
   path: .
-  buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack.git
   services:
-  - mysql-db
+  - db1
   env:
     BP_DEBUG: "True"
