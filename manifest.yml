@@ -6,6 +6,6 @@ applications:
   host: phalcon-demo
   path: .
   services:
-  - db1
+  - mydb1
   env:
     BP_DEBUG: "True"
